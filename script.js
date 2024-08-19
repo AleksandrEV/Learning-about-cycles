@@ -16,7 +16,7 @@ sum ();
 */
 
 // 2. Напишите код, которые принимает от пользователя строку и выводит на экран все символы этой строки в обратном порядке
-
+/*
 const input = prompt('Введите строку:');
 const string = String(input);
 let reversed = '';
@@ -25,3 +25,18 @@ for(let i = string.length -1; i >=0; i--) {
   reversed += string[i];
 }
 alert(string + ' наоборот будет: ' + reversed);
+*/
+
+//3. Напишите программу, которая запрашивает у пользователя числа и находит все простые числа меньше или равные этому числу
+
+const input = prompt('Введите число');
+const number = Number(input);
+let simpleNum = null;
+
+for(let i = 0; i<=number; i++) {
+  if (Number.isInteger(i,10)) {
+    simpleNum += i + ', ';
+  }
+  console.log(simpleNum);
+  
+}
