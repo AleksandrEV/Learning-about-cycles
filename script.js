@@ -28,7 +28,7 @@ alert(string + ' наоборот будет: ' + reversed);
 */
 
 //3. Напишите программу, которая запрашивает у пользователя числа и находит все простые числа меньше или равные этому числу
-
+/*
 const input = prompt('Введите число');
 const number = Number(input);
 let simpleNum = null;
@@ -40,3 +40,17 @@ for(let i = 0; i<=number; i++) {
   console.log(simpleNum);
   
 }
+*/
+
+// ФУНКЦИИ!!!!
+
+// 1. Напиши функцию находящую площадь круга
+
+const radiusStr = prompt('Введите радиус круга в сантиметрах');
+const radius = Number(radiusStr);
+
+function sCircle () {
+  let s = 3.14 * (Math.pow(radius, 2))
+  alert('Площадь круга с радиусом ' + radius + ' сантиметра = ' + s);
+}
+sCircle();
