@@ -45,7 +45,7 @@ for(let i = 0; i<=number; i++) {
 // ФУНКЦИИ!!!!
 
 // 1. Напиши функцию находящую площадь круга
-
+/*
 const radiusStr = prompt('Введите радиус круга в сантиметрах');
 const radius = Number(radiusStr);
 
@@ -54,3 +54,15 @@ function sCircle () {
   alert('Площадь круга с радиусом ' + radius + ' сантиметра = ' + s);
 }
 sCircle();
+*/
+
+// 2. Вывести в консоль все переданные в функцию аргументы
+
+function logArgsToConsole() {
+  //console.log(arguments);
+  for (let argument of arguments) {
+    console.log(argument);
+  }
+  console.log('Больше аргументов нет');
+}
+logArgsToConsole(55, 332, 52, 342, 2);
