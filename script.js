@@ -57,7 +57,7 @@ sCircle();
 */
 
 // 2. Вывести в консоль все переданные в функцию аргументы
-
+/*
 function logArgsToConsole() {
   //console.log(arguments);
   for (let argument of arguments) {
@@ -66,3 +66,19 @@ function logArgsToConsole() {
   console.log('Больше аргументов нет');
 }
 logArgsToConsole(55, 332, 52, 342, 2);
+*/
+
+// 3. Напиши функцию,принимающую в качестве агрументов 2 числа и возвращает максимальное из них
+/*
+function findMax (a, b){
+  if (a > b) {
+    console.log(a);
+  }
+  if (b > a) {
+    console.log(b);
+  }
+  if (a === b) {
+    console.log('Значения равны');
+  }
+}
+*/
