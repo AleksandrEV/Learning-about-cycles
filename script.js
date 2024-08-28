@@ -82,3 +82,20 @@ function findMax (a, b){
   }
 }
 */
+
+// 4. Создайте функцию countVowels, которая принимает строку в качестве аргумента и возвращает количество гласных в этой строке. Строка может содержать как строчные, так и прописные буквы.
+
+const input = prompt('Введите строку');
+let string = input.toLowerCase();
+const vowels = 'уеёаыоэяию';
+let count = 0;
+
+function countVowels () {
+  for (let i = 0; i < string.length; i++) {
+    if (vowels.includes(string[i])) {
+      count++;
+    }
+  }
+  alert('В строке: "' + input + ' " - ' + count + ' глассных букв');
+};
+countVowels();
