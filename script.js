@@ -84,7 +84,7 @@ function findMax (a, b){
 */
 
 // 4. Создайте функцию countVowels, которая принимает строку в качестве аргумента и возвращает количество гласных в этой строке. Строка может содержать как строчные, так и прописные буквы.
-
+/*
 const input = prompt('Введите строку');
 let string = input.toLowerCase();
 const vowels = 'уеёаыоэяию';
@@ -99,3 +99,18 @@ function countVowels () {
   alert('В строке: "' + input + ' " - ' + count + ' глассных букв');
 };
 countVowels();
+*/
+
+
+// 5. Напиши стрелочну функцию преобразующую сломанные сслыки типа 'vk', 'youtube', 'facebook' в работающие типа 'https://vk.com'
+
+const brokenLinks = ['vk', 'youtube', 'facebook'];
+
+function fixLinks () {
+  let correctLinks = [];
+  for (let argument of brokenLinks) {
+    correctLinks.push('https://'+argument+'.com');
+  }
+  console.log(correctLinks);
+};
+fixLinks();
