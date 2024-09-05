@@ -103,7 +103,7 @@ countVowels();
 
 
 // 5. Напиши стрелочну функцию преобразующую сломанные сслыки типа 'vk', 'youtube', 'facebook' в работающие типа 'https://vk.com'
-
+/*
 const brokenLinks = ['vk', 'youtube', 'facebook'];
 
 function fixLinks () {
@@ -114,3 +114,23 @@ function fixLinks () {
   console.log(correctLinks);
 };
 fixLinks();
+*/
+
+// 6. Напишите программу, которая запрашивает у пользователя число и выводит сообщение, является ли это число чётным или нечётным.
+
+const numInput = prompt('Введите число:')
+const num = Number(numInput);
+
+function evenOrOdd () {
+  if (typeof num === 'number' && !isNaN(num) && num !== 0) {
+    if (num % 2 === 0) {
+      alert(`Число ${num} является четным`);
+    } else {
+      alert(`Число ${num} является нечетным`);
+    };
+  } else {
+    alert(`Попробуйте еще раз!
+      Возможно "${numInput}" не является числом`);
+  };
+}
+evenOrOdd();
