@@ -117,7 +117,7 @@ fixLinks();
 */
 
 // 6. Напишите программу, которая запрашивает у пользователя число и выводит сообщение, является ли это число чётным или нечётным.
-
+/*
 const numInput = prompt('Введите число:')
 const num = Number(numInput);
 
@@ -134,3 +134,42 @@ function evenOrOdd () {
   };
 }
 evenOrOdd();
+*/
+
+// 7. Напишите функцию sumArray(arr), которая принимает массив чисел и возвращает их сумму.
+
+
+function sumArray (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  console.log(sum);
+};
+
+// 8. Напишите функцию sumPositiveNumbers(arr), которая принимает массив чисел и возвращает сумму только положительных чисел в массиве. Если в массиве нет положительных чисел, функция должна вернуть 0.
+
+function sumPositiveNumbers(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) {
+      sum += arr[i];
+    }
+  }
+  console.log(sum);
+}
+
+// 9. Напишите функцию findMax(arr), которая принимает массив чисел и возвращает наибольшее число в этом массиве. Если массив пустой, функция должна вернуть null.
+
+function findMax(arr) {
+  let maxSum = 0;
+  if (arr.length === 0){
+    return null;
+  }
+  for (let i = 0; i < arr.length; i++) {
+    if (maxSum < arr[i]) {
+      maxSum = arr[i];
+    }
+  }
+  console.log(maxSum);
+}
