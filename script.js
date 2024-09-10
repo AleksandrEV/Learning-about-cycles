@@ -137,7 +137,7 @@ evenOrOdd();
 */
 
 // 7. Напишите функцию sumArray(arr), которая принимает массив чисел и возвращает их сумму.
-
+/*
 
 function sumArray (arr) {
   let sum = 0;
@@ -173,3 +173,63 @@ function findMax(arr) {
   }
   console.log(maxSum);
 }
+
+//10. Напишите функцию findAverage(arr), которая принимает массив чисел и возвращает их среднее значение. Если массив пустой, функция должна вернуть null.
+
+function findAverage(arr) {
+  let sum = 0;
+  if (arr.length === 0) {
+    return null;
+  }
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  console.log(`Среднее значение чисел = ${sum / arr.length}`);
+}
+*/
+// 11. Тернарный оператор
+/*
+( function () {
+  const numOne = 8, numTwo = 3;
+
+  let verb = (numOne !== 1) ? 'are' : 'is';
+  console.log(`There ${verb} ${numOne}`)
+
+  let parity = (numOne % 2 !== 0) ? 'Odd' : 'Even';
+  console.log(`${numOne} is ${parity}`);
+
+  parity = (numTwo % 2 !== 0) ? 'Odd' : 'Even';
+  console.log(`${numTwo} is ${parity}`);
+
+  let max = (numOne > numTwo) ? numOne : numTwo;
+  console.log(`${max} is the greater Number`);
+  
+} ) ()
+*/
+
+// 12. Привести разные типы значений к булевым.
+/*
+console.log(Boolean(0)); //false
+console.log(Boolean('0')); //true
+console.log(Boolean(false)); //false
+console.log(Boolean('false')); //true
+console.log(Boolean([])); //true
+console.log(Boolean([].length)); //false
+console.log(Boolean("")); //false
+console.log(Boolean("something")); //true
+*/
+
+// 13. Баловство с prototype
+/*
+const womenNasty = {
+  age: 22,
+  hight: 165,
+  firstName: 'nasty',
+  sayHelloy: function () {
+    console.log('Hellow!');
+  }
+}
+Object.prototype.sayGoodbye = function(){
+  console.log('Goodbye');
+}
+*/
