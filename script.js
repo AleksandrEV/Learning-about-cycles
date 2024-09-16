@@ -232,4 +232,30 @@ const womenNasty = {
 Object.prototype.sayGoodbye = function(){
   console.log('Goodbye');
 }
+
+// 14. Напиши программу принимающая чилсо n, надо вернуть 2 строки со сведеньями о том, сколько четных числел и нечетных от 0 до n.
+
+function sumOddAndEven (n) {
+  let odd = 0;
+  let even = 0;
+  for (let i = 1; i <= n; i++) { 
+    if (i % 2 === 1) {
+      odd += 1;
+    } else {
+      even += 1;
+    }
+  }
+  console.log(`От 1 до ${n} - ${even} четных числа и ${odd} нечетных числа`);
+}
+
+// 15. Напишите функцию multiplyArray(arr, multiplier), которая принимает массив чисел и множитель. Функция должна возвращать новый массив, где каждый элемент массива умножен на переданный множитель.
+
+function multiplyArray(arr, multiplier = 2) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    newArr.push(arr[i]*multiplier);
+  }
+  console.log(newArr);
+}
+multiplyArray([1,2,3,4,5,7,9,13,17,21], 9)
 */
