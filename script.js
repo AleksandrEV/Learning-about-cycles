@@ -259,3 +259,35 @@ function multiplyArray(arr, multiplier = 2) {
 }
 multiplyArray([1,2,3,4,5,7,9,13,17,21], 9)
 */
+
+/*
+// 16. Напишите функцию findMostFrequent(arr), которая принимает массив и возвращает элемент, который встречается чаще всего. 
+// Если таких элементов несколько, функция должна вернуть любой из них.
+
+function findMostFrequent (arr) {
+  let frequency = {};
+
+  for (let i = 0; i < arr.length; i++) {
+    let item = arr[i];
+    
+    if (frequency[item]) {
+      frequency[item]++;
+    } else {
+      frequency[item] = 1;
+    }
+  };
+
+  let maxCount = 0;
+  let mostFrequencyItem = null;
+
+  for (let item in frequency) {
+    if (frequency[item] > maxCount) {
+      maxCount = frequency[item];
+      mostFrequencyItem = item;
+    };
+  };
+  console.log(mostFrequencyItem);
+};
+
+findMostFrequent([1, 2, 3, 2, 3, 5, 6, 7, 3, 7, 7, 8, 7]);
+*/
